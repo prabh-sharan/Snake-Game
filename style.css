@@ -1,0 +1,70 @@
+body{
+    background:#073b4c;
+    font-size:24px;
+    text-align:center;
+    
+}
+
+h1{
+    font-size:50px;
+    color:#ffd166;
+    padding: 10px;
+    
+    
+}
+h2{
+    color:#fff;
+    
+}
+
+
+button{
+    padding: 15px 20px;
+    margin-right:10px; 
+    font-size:19px;
+    font-weight:700;
+
+    background:#118ab2;
+    color: #fff;
+    border:3px solid #000;
+    
+}
+.emojiSnake{
+    color:#386641;
+}
+.container{
+    max-width:600px;
+    margin:0 auto;
+
+   
+}
+.grid{
+    width:300px;
+    height: 300px;
+    margin:0 auto;
+    border:4px solid #000;
+
+    display: flex;
+    flex-wrap: wrap;
+    
+
+    background:#ffd166;
+}
+.box{
+    width:30px;
+    height: 30px;
+
+    border-radius:8px;
+    
+}
+
+
+.snake{
+    background: #386641;
+
+}
+
+.apple{
+    background: #bc4749;
+  
+}
