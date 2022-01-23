@@ -51,7 +51,9 @@ function startGame() {
 
     direction = 1
     intervalTime = 1000
+    
     generateApple()
+
     //readd the class of snake to our new currentSnake
     currentSnake.forEach(index => squares[index].classList.add('snake'))
     timerId = setInterval(move, intervalTime)
@@ -98,9 +100,7 @@ function move(){
         //speed up snake
 
         clearInterval(timerId)
-        console.log(intervalTime)
         intervalTime=intervalTime * speed 
-        console.log(intervalTime)
         timerId=setInterval(move,intervalTime)
         
 
@@ -129,19 +129,18 @@ function changeDirection(e){
   
     if(e.key === "ArrowLeft"){
         direction = -1
-        console.log("left pressed")
+    
     }
     else if(e.key === "ArrowRight"){
         direction = 1
-        console.log("Right pressed")
+        
     }
     else if(e.key=== "ArrowDown"){
         direction= +width
-        console.log("Down pressed")
+    
     }
     else if(e.key=== "ArrowUp"){
         direction = -width
-        console.log("Up pressed")
         
     }
           
